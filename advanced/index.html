@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://bugg-resources.github.io/bugg-docs/advanced/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Advanced - Bugg documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Advanced";
+        var mkdocs_page_input_path = "advanced.md";
+        var mkdocs_page_url = "/bugg-docs/advanced/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Bugg documentation
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Quick start</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../config/">Configuration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../audio/">Audio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../connectivity/">Connectivity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../power/">Power</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../time/">Time</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Advanced</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#shell-access">Shell access</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#open-access-resources">Open access resources</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Bugg documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Advanced</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div id="mkdocs-encrypted-content" style="display:none">vyStggOJ0gfT4URJaD+HCg==;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</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form">
+        <h1>Password protected page</h1>
+        <p>Please enter a password below to access the full Bugg documentation</p>
+        <input type="password" id="mkdocs-content-password" placeholder="Password">
+        <button id="mkdocs-decrypt-button">Login</button>
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "bugg-docs/advanced/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["0vqZkpQMgZ7TnzGMmvi8zQ==;I8AoTfTLI6Zmxaqd2inV2mZQ+1YNnBj/qqR1t04EzAUIPy3PZCV8yAJPA9+v/0UBFfqCDg53Nbmy+r1H5St4yWRH/5w8yWGMZD/Rz7uRvKufQp7ZHSgPXz/kuHPJt+tM;8UfP07Fc23MQaoUiZLP5lw=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js"></script>
+<script type="text/javascript" src="../assets/javascripts/decrypt-contents.js" defer></script>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../troubleshooting/" class="btn btn-neutral float-left" title="Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contact/" class="btn btn-neutral float-right" title="Contact">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../troubleshooting/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../contact/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

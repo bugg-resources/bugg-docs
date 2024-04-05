@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://bugg-resources.github.io/bugg-docs/troubleshooting/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Troubleshooting - Bugg documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Troubleshooting";
+        var mkdocs_page_input_path = "troubleshooting.md";
+        var mkdocs_page_url = "/bugg-docs/troubleshooting/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Bugg documentation
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Quick start</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../config/">Configuration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../audio/">Audio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../connectivity/">Connectivity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../power/">Power</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../time/">Time</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Troubleshooting</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#faqs">FAQs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-timestamp-of-recorded-files-is-incorrect">The timestamp of recorded files is incorrect</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-mobile-internet-doesnt-work">The mobile internet doesn't work</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-device-stops-recordingtransmiting-data-during-certain-hours-of-the-day">The device stops recording/transmiting data during certain hours of the day</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-troubleshooting">Advanced troubleshooting</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../advanced/">Advanced</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Bugg documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Troubleshooting</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div id="mkdocs-encrypted-content" style="display:none">7vZIGKKzOUqLcHkVRmzy8A==;2E4iTaaqNwcH/GpcB7R14xN+n9YPOnuaGEExEGvoPRPHqveUSqINAJQPGk/vvfhY8ldaXyAS/DSsTjfEwELEYBix2TyAlR+9UVTVShQ127fbD2noAvVI9LBKWf17wpf+HFholTtvovxTQ1xS0+yDJRZ4Z2RQ8BH61pazVTzDj94Zjarx3/YwGrNG/mwcxJYyVQL0Py0yTdX/CO98pDIYa95X4iwDujY4UXt0YiWAd+HyS5NVy25ZovQnKzbQNVMaxY9kaM6ObedsEztJWoFE1a4DYaD5LfupWhtH9TDMM9afhCrDBZDkPBU9Jvt1PlxbR3Osy9YFPUZNVbXla6x5+IXaXGXyVzwAle9osXJp/latIYc1T6K6UXSRBkqNI71+IjaYEZKaNvGLfjeQPRgHb8pGkXUjKQ+rZayeC1YRj2NCGaYc/40owxAW6tb51CR57IWZyXbYtZ7KwO/XGj7Rp9lFHlVf3BEp1WxRUdjlxB+LlUHPz6PL2P/UnVbhJs+xtPs5syzHhRG4BvJW7HqanM9ZW+L/+D0Tja3mrNWX5tM/ENMH4Kihe6ZxGFu14hvTZF+Y42oacZMqANLbLMVXXVVNi17fjLq9E0zZA81JrI9wcfenlAfzUGPeszX5DuHJfieOc/r3aiNWE2nZTMjG7S6o1zqwR413wAqGHbLpnqIR32eT86OcCqdiYWeMsE1cOE6TCsPy9PDGBWbCR/F6sZVlDQHLaK+14Jizt5HOKtmLec6QcLGzcvJSAa8838C/HrBYm146+CuSjU0+F79AKJ1JJOUT1DZPb2kktNQTlcn85h/h5iMIpqVByXYKjQOEWue1rR+cwCYHgdr9w1nn1SpRqH2RxB368r9ksMFU0daSOJoLMCFmlEQnKhmke0fSedK+P4CZZy7gBuA3WK64AQxqiQ70QieTU4xJb6RdMVSzUNOCXscEYGQYGcfJSzmJtck1uY3suXmtCme5J8Vbp4A4fzHfMFZ7hSHJR9WPHzQKaXkARjlasAu+QfvvgIR3kGD0GWufraVA6oP+DFsAbZDq7UF6l7elMPOPgX+EAY5dc2ikixTQe9l1Qa8euqiKwcaxN7BNs8DBu/bLlEUn7ueWo7xd740PGqGOJ/WFdt+Hpqjm2tKf5L9sDowQi3yEXRFy2LOg8oQE8Uc66ZXfIFpHf9rFoQt9R9xFP/POlP8C+v//i7WP9vCzEjE6XfxpMlWSFRdKnYxqGn4ycgfASmX1jDKw/5LoONJ4JlIH9nTfpcRPJzBszx2HFJffZ8xR1K0tDM05VbEcWZdAOUWTcWp3MIqy/161yv+jVm4n+iZfOrxXztT1N91xoAl9kHep68KAbfToOaj4VML/qEl8wH2OmIeyxd9FRY4H0/M0244e7BY1olkvwe7e1kP0Fg+1h68yEOeUCEU1+4sKPBOWDLp8gHPNaC1NxWhJJVnK8R+4dgfJ140xPSpuX+byrW4m+YdjgAvUgj/M1rh6Ny0ViT+7A0DTWhRVPekF6Ax+Pp68zh6qBOL/phafpDwUFjCNZhk6Fd8ILec8ON3WOjBgeHwF3TvkAv5U3p9f2vFEPEf5pxjPhBhBp8P98OrPYf2zwsudJO81T2PoK/IYMGRUHdk4Fzu9OILMIiLSShZWME44k/gCMi1Y+jCIKtlydPdnUWHLInQnc4ByOA5Tct8pZMUJUkxtGvq/5dHbSoprrP6HntNpeqzgpzKXxX5t3zW+T6Nd2iqvBq8fsg9ntRdy4WBxCTwu9G4vuAd0yfnO9j4q1nlgaKKkR6XbwlKdTRGd4pQldYNs570mk3GDlprZmgX92On/06alRnCr5Y2hZiQGmz8ln7KJDVsHGnrx5eGYImAHiW7ZvjcUDtUlnTuOyvlNVweHW/d2IsjRxFPdM2DLs1kSiHy7mSwskfgsFRLZHZFo7Pxpq/THC0O8LjdXgEGXVr2DC5CCLTQzmYFNxLo026tmOOkcUl0Xx1zmHj6XubAArH8nEGOH7ilt3ttQjgVA+kETqjiDxyh2e5c5oZWcqf+w9XEQXxFUObvg90caCsuNKrDxHFn0Shz26jqGE5O3BFHFNs6+BN6OZATfXxlIeUqSfXLrzciyYHMjpnim2aXiHvvI77a2sKoLy5IDrzZ4q5KaYQCj+Sqa7dwjhWNfXStU6Xj1BrWHW+r5ewU29sAFvK1/hSQRtgSGor0+IeWvkaJ0/O50SkQSp8+DZVOsIMKuThSmlLSNvMdk0uX/79e0YHUC0/ka0XwsKyu23K2Ys38OkIFJQuivwTiffvcbvztlnKM8h0i7QAR7cmGnV6jDOLx9tD5DQ73F67sbwA68l9nx0aoUFq9eEroSg6sxvJbwQK5SIeVrGuCGTNRFyjGqGb+P24kyc8m5/sPREz9lDan4BGYvORXbKVP2infNHiFk/WmEh1rdYlpFw66nOlGhOFEyl/KzNlAX84Bxx7BSoNHOVClp+cckD7zyzJYIlc24UoQvH6qYH9de+H+4CuY/3j38KP7GaK3wsF+ZtDYev/f9K9VpqEtalKUF+uJJfgCOkTgxd+9MtjCOwWzd3mlCThI7OqFXoRW8rEdovWhWaYEsmaW51a6G5HxxKUhtTVcNUX7FmGPcLCin4uiWGSkfJGfjvhoCQ658lIpHHg/rRCRaSTOkO5R+nNuXsjpcAcb90dNjrY5s+9iA0NaSG1VqDdKBKKBASiSRk88p9eLOKg1BocgvN4DMOX8/pDyk8jRgLaQo95R1zABNGk5bf6rQpxc8g388bwAuCKPxEnzUH5vmbMqnp794IMIBjWtR3eBuZaOIXedtGbruqE5Dv8zU0hHIYkQM80VO6iS35kpVfwcxRP4Dya+9nz0rBkaCP9Ncns/Nu90AWVohGBAEYWJaHsXdmABt5+Xl/M4BT+bFBJAdEX/cmZGi9jJTWm2z15XRp5pdMMDmu5gbSgT0E8F5c7ZBCp0+upxjipg7DzjMdVqj3LjGEiGA4naA+HAsizFNPu6/QbIIq6CRXynGRqiNK6A2Pe004ULUpbCOiUgUEhmHxro3KV6DNOJgQJ8nXtoAZ00kX4l+u+fMIXfMDMRqLjZhVmrP1RVUlhyrc+Oz8pNZVHXpZ0pCPjBin2mcGiVDfgxH+L0D7qKiQ+5gDrJBV9QFxftmH0SyfsXeprTCS7MmvrAAgrbAobHIg+xIYGKqaOn7lnIqdybAHtP2Tl227vzfKEFUDnqwxzUyL/eg+pCW7XU+1f9h5QnXcKkWI64ZHhlURyzpUZsR0ANyba8LhLvPU2UU4V30Ey7kj7BA/5LwpTXA9LffOZuiv4G3D4Gn9dqAHSXs1zn2dLr/XhV16KK0PfJxCIFAm+sXjTT6K4wvQ5UtqQoQ/tkrrMZu1m6y/LUysceGYRSP7vINtPHVjLN3j5DorT+Dnn03v1LEBcUU00mZ9tZXaUmMYBLU+hUy/pL3Z9FU2/T4wFRVjWLllb/ZkO6wzWfpFM9vgV/UdQWW5a34gV17t/QCfIjwJgMJDH92/iUYv9yRux/PXKiVawfli4uG/D/29BaPlMM0ZX6YUwzscyM5Yu0ihpAUngHW9ZMvkhMwR+Rs8cQZ12LMJWBTyJmafvMEjbdB+sVbyPZEZgwOZEMrDS2ZzRTh5df0Sma+3EIwvmqBJtXfwvmzbl7Olho8EV42wXYWud46YtC3lOUE+Or46c76r7yY+FrfLfFwD1U9YqAcKMF3Qnn2KAolsj9raIQCn44Gyo5JsrK42Tkive8r5MXIRGFKNzBeUsXQoDLATqAGrvY4g/qIfRXXCZNeF8HoLgm1a5/20f5hbzn/aQTlEXCP940PUYeJ1mTf3bipL+ZX64CzhZkNcGEKQTvACgdDKVo84T0j4VnsK/SRFZLpbxzec/R5VYGGDNl1SkUiwaCBiR8cst1WLjWw+HsRNsSd5FnnC4qOXfuGrQppvIiNqwB2oA4toKivgS8PMRoCWijJZ5veLbTXhIIlnlhyiGZFfzsZRtYQVZNRu12EmotT8QU+FcwmEooMjEdShMUtUFYYZjK1AqxNb/k07qsO9Mg/y9QYkJAUJx1BmUaQUrtKQmy9546qw3i5E7tbU7w+lqGQgZg25TMmvzX+jIRUkpmV28pHqjQiv+RaxduoMwIeMoQRd1Kr+nKD8styreMCMT3dmIoDWnZ4XEkfPnzcw+8g3Z0PwJ+eTuTFvHYcEuPOjosdPlBX5epv2C8OKbBuXMB50qxlSb7+pmL0JSpll3bMZ8Am2Mh9m4WGZ03v/spnKrkGBo1rltLQfMaL8UGZiN9410Eq9+5M1cme6E+/U23be0ZthvkctInpdlbLNczda1UPbqN3iAN/gBCZb5O7mbLhHZ+8p/JrHeHfcADjPif3GUdt5GNqZGHCS3p/fpwwVTm2ks8O0uvWbEUPdnrt829ygWzCkTxPZM27bBtdCJekUoEZ/9AG/awlG9CgoYLZe/FPW/86tF6w6yaWmSc1csq4US5026J+NzmNhVgVxP7JooWmLqRXZjfHQyNv8FIyALpfHBMwhr5mIyrPE9PmIwViQoYrXGdHg7ujBaMYf3voSoRMkAOB6gMREN/pXzqQ7A+mVTly/WCvYzjuNuw7vCr/bs9NtGWjyy7hUHU+yl89dYVEsscGcvsp/kd22N1xSv38fUSPsrUSjgLaJE2PnpiBBRwilz6wda1ZqwKKnQ+pw2mvNxc0lIlYcSOXaj6Ay5EGLOImLRZdzgpZcdUVJVJFilTfh1xlDivdbKCQSp0HbzmJrH7W9xoHZaffxhQjLsyWANvxHHaENxUgQTVBT5j9FFC1VaMsp98K/7SIZo3uFEEOayjuxYTbP+JQ+VBxJI1peRNmrOm+qiV0PCf+oIZ+TKhpGvza1wXMGed3EHiigGous6maq4D3i5iATnyzxV8y9fDMJT88PSZccQ6amOe9uLj52Y1TqxlaJ28WJdXlXIAufmKEWowo5mSGKlIUdBgSGnTZ9c3AEOenqrQBTvvdbOkGhejVxbmvCYF3LE8Uns6quw==</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form">
+        <h1>Password protected page</h1>
+        <p>Please enter a password below to access the full Bugg documentation</p>
+        <input type="password" id="mkdocs-content-password" placeholder="Password">
+        <button id="mkdocs-decrypt-button">Login</button>
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "bugg-docs/troubleshooting/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["0vqZkpQMgZ7TnzGMmvi8zQ==;I8AoTfTLI6Zmxaqd2inV2mZQ+1YNnBj/qqR1t04EzAUIPy3PZCV8yAJPA9+v/0UBFfqCDg53Nbmy+r1H5St4yWRH/5w8yWGMZD/Rz7uRvKufQp7ZHSgPXz/kuHPJt+tM;8UfP07Fc23MQaoUiZLP5lw=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js"></script>
+<script type="text/javascript" src="../assets/javascripts/decrypt-contents.js" defer></script>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../time/" class="btn btn-neutral float-left" title="Time"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../advanced/" class="btn btn-neutral float-right" title="Advanced">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../time/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../advanced/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

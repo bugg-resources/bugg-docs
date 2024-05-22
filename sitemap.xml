@@ -2,57 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/advanced/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/audio/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/config/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/connectivity/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/contact/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/hardware/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bugg-resources.github.io/bugg-docs/leds/</loc>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/power/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/quickstart/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/time/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bugg-resources.github.io/bugg-docs/troubleshooting/</loc>
-         <lastmod>2024-04-05</lastmod>
+         <lastmod>2024-05-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

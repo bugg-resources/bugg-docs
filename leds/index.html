@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://bugg-resources.github.io/bugg-docs/quickstart/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://bugg-resources.github.io/bugg-docs/leds/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Quick start - Bugg documentation</title>
+    <title>Status LEDs - Bugg documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Quick start";
-        var mkdocs_page_input_path = "quickstart.md";
-        var mkdocs_page_url = "/bugg-docs/quickstart/";
+        var mkdocs_page_name = "Status LEDs";
+        var mkdocs_page_input_path = "leds.md";
+        var mkdocs_page_url = "/bugg-docs/leds/";
       </script>
     
     <!--[if lt IE 9]>
@@ -39,22 +39,28 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick start</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#equipment">Equipment</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#deployment">Deployment</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Quick start</a>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../hardware/">Enclosure and ports</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../leds/">Status LEDs</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Status LEDs</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recording-led">Recording LED</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#connectivity-led">Connectivity LED</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#power-led">Power LED</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#led-error-state">LED error state</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -103,7 +109,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Quick start</li>
+      <li class="breadcrumb-item active">Status LEDs</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -112,7 +118,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <div id="mkdocs-encrypted-content" style="display:none">9/dyY3XZjPsEjHOTECLEVA==;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</div>
+                <div id="mkdocs-encrypted-content" style="display:none">pXVI73zhJqSIxFrgDb2YKw==;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</div>
 <div id="mkdocs-decrypted-content">
     <form id="mkdocs-decrypt-form">
         <h1>Password protected page</h1>
@@ -125,7 +131,7 @@
 
 <script type="text/javascript">
 var encryptcontent_id = "encryptcontent_1";
-var encryptcontent_path = "bugg-docs/quickstart/";
+var encryptcontent_path = "bugg-docs/leds/";
 var decryption_failure_message = "Invalid password.";
 var encryptcontent_keystore = ["L7sAZ5VqTCe1WU+NrbAQrA==;Lc5slZI+mOQdkR6ysbQ5VfWs1kRturtCzPhmE1c/Zd6H89YsUDygVO8MYuudthldEi2Tw9pIfj8kyjIqT/orqKDvdeE1WkP214LrITDyxM07rWlFHGAbHEhAZTOd/r6W;8UfP07Fc23MQaoUiZLP5lw=="];
 var encryptcontent_obfuscate = 0;
@@ -143,8 +149,8 @@ var encryptcontent_obfuscate = 0;
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../hardware/" class="btn btn-neutral float-right" title="Enclosure and ports">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../hardware/" class="btn btn-neutral float-left" title="Enclosure and ports"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../config/" class="btn btn-neutral float-right" title="Configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -167,10 +173,10 @@ var encryptcontent_obfuscate = 0;
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../hardware/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../hardware/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../config/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

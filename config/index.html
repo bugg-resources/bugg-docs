@@ -203,7 +203,11 @@
 <li><code>password</code>: APN password </li>
 </ul>
 <p>They can easily be found by searching online (e.g., "Vodafone UK pay monthly APN settings"), or by inserting the SIM card into a phone and finding the APN details in the relevant settings page of the phone OS.</p>
-<p>Some mobile providers do not require APN usernames and/or passwords. For these, leave empty strings in the <code>config.json</code> file (e.g., <code>"username": ""</code>, <code>"password": ""</code>)</p>
+<p>Some mobile providers do not require APN usernames and/or passwords. For these, delete the unused parameters in the <code>config.json</code> file (e.g., <code>"username"</code> and/or <code>"password"</code>) so the relevant part of the configuration looks like:</p>
+<div class="highlight"><pre><span></span><code>&quot;mobile_network&quot;: {
+   &quot;hostname&quot;: &quot;internet&quot;
+},
+</code></pre></div>
 <p>See the <a href="../connectivity/">connectivity</a> page for more details on mobile internet settings.</p>
 <h3 id="remote-server-details">Remote server details<a class="headerlink" href="#remote-server-details" title="Permanent link">&para;</a></h3>
 <p>Bugg devices upload audio data to a Google Cloud Storage bucket. The authentication details in the configuration file allow the Bugg to write data to the bucket through a service account.</p>

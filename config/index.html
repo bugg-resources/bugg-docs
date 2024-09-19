@@ -136,6 +136,7 @@
 <p>A single <code>config.json</code> file can be used for multiple Buggs under the same project (assuming SIM cards are on similar plans). </p>
 <p>There is no need to change any parameters within the configuration file to individually identify devices. Devices are uniquely identified by a unique hardware ID baked into the CPU of each device, which is either printed on the enclosure or supplied upon delivery. </p>
 <h3 id="structure-of-configjson">Structure of <code>config.json</code><a class="headerlink" href="#structure-of-configjson" title="Permanent link">&para;</a></h3>
+<p><a download="config.json" href="../static/config.json">Download an example config.json file</a></p>
 <p>There are four main components of the <code>config.json</code> file:</p>
 <ol>
 <li>General information</li>
@@ -143,7 +144,7 @@
 <li>Mobile internet settings</li>
 <li>Remote server details</li>
 </ol>
-<p>Configuration files should be based on the below template:</p>
+<p>Below is an example of a typical Bugg configuration file. To create your own use the downloadable template above rather than copying the below text to avoid potential encoding issues.</p>
 <div class="highlight"><pre><span></span><code>{
    &quot;device&quot;: {
       &quot;gcs_bucket_name&quot;: &quot;bugg-audio-dropbox&quot;,

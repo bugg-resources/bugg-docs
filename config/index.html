@@ -188,12 +188,23 @@
 <p>The values of <code>project_id</code> and <code>config_id</code> will be included in the filename of uploaded audio data on the remote server.</p>
 <h3 id="audio-recording-parameters">Audio recording parameters<a class="headerlink" href="#audio-recording-parameters" title="Permanent link">&para;</a></h3>
 <ul>
+<li><code>sensor_type</code>: "I2SMic" for the onboard MEMS mic, "ExternalMic" for external microphones</li>
 <li><code>record_length</code>: Audio file size (seconds)</li>
 <li><code>capture_delay</code>: Delay between recording audio files (seconds)</li>
 <li><code>record_freq</code>: Audio sampling frequency (Hz)</li>
 <li><code>compress_data</code>: Enable/disable MP3 VBR0 audio compression</li>
-<li><code>sensor_type</code>: "I2SMic" for the onboard MEMS mic, "XXX" for external microphones</li>
 </ul>
+<p>The below extra parameters are only used for <code>"sensor_type": "ExternalMic"</code></p>
+<ul>
+<li><code>phantom_power</code>: Phantom power mode ("PIP" = Plug in Power, "P3V3" = 3.3V on M12 Pin 4, "P48" = 48V) <ul>
+<li><strong>Warning</strong> potential for high voltages, check compatibility before connecting microphone</li>
+</ul>
+</li>
+<li><code>gain</code>: Sound card gain (0-20, 3dB steps)</li>
+<li><code>amplification</code>: Amplification factor (1.0 = no amplification)</li>
+<li><code>enable_internal_mic</code>: Record audio in two channels, one mapped to the internal and the other to the external microphone</li>
+</ul>
+<p>The difference between <code>gain</code> and <code>amplification</code> is whether the audio is amplified at the sound card level, or after the file has been recorded. We recommend <code>"gain": 8</code> and <code>"amplification": 1.0</code>.</p>
 <p>See the <a href="../audio/">audio</a> page for more detail on Bugg audio specifications.</p>
 <h3 id="mobile-internet-settings">Mobile internet settings<a class="headerlink" href="#mobile-internet-settings" title="Permanent link">&para;</a></h3>
 <p>These settings are specific to both the network provider and mobile data plan used by the nano SIM. </p>

@@ -68,7 +68,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mobile-internet">Mobile internet</a>
+    <li class="toctree-l2"><a class="reference internal" href="#mobile-internet-regions">Mobile internet regions</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#google-cloud-storage">Google Cloud Storage</a>
         <ul>
@@ -134,10 +134,22 @@
 <p>When an audio file is recorded by Bugg, it is always first stored to the microSD card. Then, when an upload is initiated in the <a href="../audio/#recording-cycle">recording cycle</a>, Bugg attempts to upload <em>all</em> local audio on the microSD to the remote server.</p>
 <p>If a file is uploaded successfully, the local file is deleted. If the upload is unsucessful, the local file is kept, and the upload is retried on the next cycle. </p>
 <p>This safe uploading approach allows Bugg to continue recording continuous datasets through intermittent drops in internet connectivity.</p>
-<h2 id="mobile-internet">Mobile internet<a class="headerlink" href="#mobile-internet" title="Permanent link">&para;</a></h2>
+<h2 id="mobile-internet-regions">Mobile internet regions<a class="headerlink" href="#mobile-internet-regions" title="Permanent link">&para;</a></h2>
 <p>With a <a href="../hardware/#side-door">nano SIM</a>, Bugg uploads audio data in near real-time using a mobile internet connection.</p>
-<p>Globally, Bugg will connect to 4G LTE networks where possible. In Europe, the Middle East, Africa (EMEA), and Australia there is 3G fallback for areas without 4G coverage. </p>
-<p>The connection is facilitated by the embedded <a href="https://www.sierrawireless.com/iot-modules/smart-modules/rc7620/" target="blank">Sierra Wireless RC7620</a> IoT module. </p>
+<p>There are three regional options for Bugg devices:</p>
+<ul>
+<li>Region 1: North America and South America (excluding Brazil)</li>
+<li>Region 2: Europe, Middle East, Africa, Brazil, Taiwan, Australia</li>
+<li>Region 3: Japan and South Korea </li>
+</ul>
+<p>Globally, Bugg will connect to 4G LTE networks where possible. In Region 2, there is 3G fallback for areas without 4G coverage. </p>
+<p>The connection is facilitated an embedded Sierra Wireless <a href="https://www.sierrawireless.com/iot-modules/smart-modules/rc7611/" target="blank">RC7611</a> (Region 1), <a href="https://www.sierrawireless.com/iot-modules/smart-modules/rc7620/" target="blank">RC7620</a> (Region 2), or <a href="https://www.sierrawireless.com/iot-modules/smart-modules/rc7630/" target="blank">RC7630</a>  IoT module.</p>
+<p>For regions not covered in the above lists, you can find out the most compatible region by comparing the supported bands below with cellular networks deployed locally to your sites of interest.</p>
+<ul>
+<li>Region 1: 4G LTE: B2, B4, B5, B12, B13, B14, B25, B26, B66, B71</li>
+<li>Region 2: 4G LTE: B1, B3, B7, B8, B20, B28 and 3G: UMTS B1 B8</li>
+<li>Region 3: 4G LTE: B1, B3, B5, B7, B8, B18, B19, B21</li>
+</ul>
 <h2 id="google-cloud-storage">Google Cloud Storage<a class="headerlink" href="#google-cloud-storage" title="Permanent link">&para;</a></h2>
 <p>Bugg uploads audio data and debug logs to a Google Cloud Storage (GCS) <a href="https://cloud.google.com/storage/docs/buckets" target="blank">bucket</a>. </p>
 <h3 id="one-off-server-setup">One-off server setup<a class="headerlink" href="#one-off-server-setup" title="Permanent link">&para;</a></h3>
